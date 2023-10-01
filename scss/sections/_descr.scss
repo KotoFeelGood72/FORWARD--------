@@ -1,0 +1,352 @@
+.descr{
+    padding: 120px 0;
+    font-size: 24px;
+}
+
+
+
+
+.tabs {
+    color: #000000;
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: 0;
+        
+    }
+    &__btn {
+        text-decoration: none;
+        color: #A9DBDE;
+        text-align: center;
+        flex-shrink: 0;
+        font-family: 'Manrope', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        flex-grow: 1;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        padding-bottom: 16px;
+        border-bottom: 3px solid #A9DBDE;
+    }
+    &__btn_active {
+        color: #4AABB0;
+        border-bottom: 3px solid #4AABB0;
+        cursor: default;
+    }
+    &__content {
+        padding: 20px;
+    }
+    &__pane {
+        padding-top: 50px;
+        display: none;
+    }
+    &__pane_show {
+        display: block;
+    }
+
+    &__pane-in{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+    &__pane-tops{
+        display: flex;
+        gap: 0 20px;
+        margin-bottom: 50px;
+        overflow-y: auto;
+        &>p{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &>p:nth-of-type(1) span{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-color: #A9DBDE;
+            margin-right: 10px;
+        }
+    
+        &>p:nth-of-type(2) span{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-color: #EC839C;
+            margin-right: 10px;
+        }
+    }
+    &__pane-top{
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        &>p{
+            font-weight: 700;
+            margin-right: 20px;
+        }
+        &>span{
+            border-radius: 10px;
+            background: $color-black;
+            color: $text-color-white;
+            padding: 10px 12px;
+            margin-right: 10px;
+            font-size: 18px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    }
+    &__pane-box{
+        width: 1089px;
+        &>p{
+            width: 100%;
+            font-weight: 500;
+            border-radius: 20px;
+            background: #EC839C;
+            color: $text-color-white;
+            text-align: center;
+            padding: 7px 0;
+            margin-bottom: 30px;
+        }
+    }
+    &__pane-box-card{
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+        background-color: rgba(169, 219, 222, 0.1);
+        padding: 30px ;
+        color: #4AABB0;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        &>hr{
+            width: 2px;
+            height: 84px;
+            opacity: 0.3;
+            background: #4AABB0;
+            margin-right: 43px;
+        }
+    }
+
+    &__pane-box-card:nth-of-type(5){
+        padding-left: 50px;
+        &>hr{
+            margin-right: 80px;
+        }
+    }
+    &__pane-box-card-left{
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+        &>p{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            &>span{
+                font-family: "Museo Cyrl 700";
+                font-size: 50px;
+                font-weight: 700;
+            }
+        }
+    }
+    &__pane-box-card-right{
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+        &>p{
+            max-width: 145px;
+            font-weight: 700;
+        }
+        &>p:nth-of-type(1){
+            text-align: right;
+        }
+
+        &>span{
+            font-family: "Museo Cyrl 700";
+            font-size: 64px;
+            font-weight: 700;
+        }
+    }
+
+
+
+    //Таб - Состав корма
+
+    &__content .tabs__pane:nth-of-type(1){
+        &>ul{
+            margin-bottom: 30px;
+        }
+        p{
+            font-weight: 700;
+        }
+    }
+
+    //Таб - Аналитический состав
+
+    &__content .tabs__pane:nth-of-type(2) .tabs__pane-in{
+        &>ul{
+            max-width: 690px;
+            // border: 1px solid #000000;
+            list-style-type: none;
+        }
+        &>ul li{
+            font-weight: 500;
+            align-items: baseline;
+            display: flex;
+            margin-bottom: 5px;
+        }
+        &>ul li::before{
+            content: '';
+            border-bottom: 1px dashed #ccc;
+            flex-grow: 1;
+            order: 2;
+            margin: 0 5px;
+        }
+
+        &>ul:nth-of-type(2) li:nth-of-type(5){
+            font-weight: 700;
+            margin-top: 30px;
+        }
+
+        &>ul:nth-of-type(2) li:nth-of-type(1),
+        &>ul:nth-of-type(3) li:nth-of-type(1){
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        
+
+        .value{
+            order: 3;
+            font-weight: 700;
+        }
+
+    }
+.table-wrapper{
+    width: 100%;
+    overflow-y: auto;
+}
+
+.table{
+    scroll-behavior: auto;
+    width: 1398px;
+    border: 1px solid #A9DBDE;
+    -moz-border-radius: 20px; /* Firefox */
+    -webkit-border-radius: 20px; /* Safari, Google Chrome */
+    -khtml-border-radius: 20px; /* KHTML */
+    -o-border-radius: 20px; /* Opera */
+    -ms-border-radius: 20px; /* IE8 */
+    border-radius: 20px; /* CSS3 */
+    display: block;
+    border-collapse: inherit;
+    & tr{
+        border: 1px solid  #A9DBDE;
+    }
+    & tr:nth-of-type(1){
+        color: #4AABB0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    & tr:first-child>td:first-child{
+        -moz-border-radius: 20px 0 0 0 ; /* Firefox */
+        -webkit-border-radius: 20px 0 0 0 ; /* Safari, Google Chrome */
+        -khtml-border-radius: 20px 0 0 0; /* KHTML */
+        -o-border-radius: 20px 0 0 0 ; /* Opera */
+        -ms-border-radius: 20px 0 0 0; /* IE8 */
+        border-radius: 20px 0 0 0 ; /* CSS3 */
+    }
+    & tr:first-child>td:last-child{
+        -moz-border-radius:  0 20px 0 0 ; /* Firefox */
+        -webkit-border-radius:0 20px 0 0 ; /* Safari, Google Chrome */
+        -khtml-border-radius:  0 20px 0 0; /* KHTML */
+        -o-border-radius:  0 20px 0 0 ; /* Opera */
+        -ms-border-radius:  0 20px 0 0; /* IE8 */
+        border-radius: 0 20px 0 0 ; /* CSS3 */
+    }
+
+    & tr:last-child>td:first-child{
+        -moz-border-radius:  0 0 20px 0; /* Firefox */
+        -webkit-border-radius:  0 0 0 20px; /* Safari, Google Chrome */
+        -khtml-border-radius:  0 0 0 20px; /* KHTML */
+        -o-border-radius:  0 0 0 20px; /* Opera */
+        -ms-border-radius:  0 0 0 20px; /* IE8 */
+        border-radius:  0 0 0 20px; /* CSS3 */
+    }
+    & tr:last-child>td:last-child{
+        -moz-border-radius:  0 0 20px 0; /* Firefox */
+        -webkit-border-radius:  0 0 20px 0; /* Safari, Google Chrome */
+        -khtml-border-radius:  0 0 20px 0; /* KHTML */
+        -o-border-radius:  0 0 20px 0; /* Opera */
+        -ms-border-radius:  0 0 20px 0; /* IE8 */
+        border-radius:  0 0 20px 0; /* CSS3 */
+    }
+    & tr>td:nth-of-type(1){
+        width: 199px;
+        height: 57px;
+        color: #D86C85;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    & tr:nth-of-type(1)>td:nth-of-type(even){
+        background-color: rgba(169, 219, 222, 0.4);
+    }
+    & tr:nth-of-type(1)>td:nth-of-type(odd){
+        background-color: rgba(169, 219, 222, 0.3);
+    }
+
+    & tr:nth-of-type(even)>td:nth-of-type(1){
+        background-color: rgba(236, 131, 156, 0.2);
+    }
+
+    & tr:nth-of-type(odd)>td:nth-of-type(1){
+        background-color: rgba(236, 131, 156, 0.1);
+    }
+
+
+    & td{
+        width: 133px;
+        border: 1px solid  #A9DBDE;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    & td>p{
+        max-width: 260px;
+    }
+}
+
+}
+
+
+@media(max-width: 1200px){
+    .descr{
+        padding: 70px 0;
+    }
+
+    .tabs{
+        &__nav {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            list-style-type: none;
+            margin: 0;
+        }
+        &__btn {
+            width: 80%;
+            margin: 0 auto;
+            text-decoration: none;
+            color: #A9DBDE;
+            text-align: center;
+            font-size: 24px;
+
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+            padding-bottom: 16px;
+            border-bottom: 3px solid #A9DBDE;
+
+            margin-bottom: 30px;
+        }
+    }
+}

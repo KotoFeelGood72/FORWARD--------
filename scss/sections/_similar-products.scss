@@ -1,0 +1,44 @@
+.similar-products{
+    padding: 130px 0;
+    background: linear-gradient(180deg, #6AD1D8 0%, #96DADE 100%);
+    &__title{
+        font-family: "Museo Cyrl 700";
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    &__inner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 60px;
+    }
+    
+}
+
+@media(max-width: 1568px){
+    .similar-products{
+        &__inner{
+            gap: 30px;
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width: 1024px){
+    .similar-products{
+        &__title{
+            font-size: 35px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media(max-width: 425px){
+    .similar-products{
+        &__title{
+            font-size: 25px;
+        }
+    }
+}

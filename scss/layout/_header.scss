@@ -1,0 +1,78 @@
+.header{
+    background-color: $color-green;
+    padding: 15px 0; 
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &>img{
+            width: 176px;
+            height: 30px;
+        }
+    }
+    &__menu{
+        &>ul{
+            display: flex;
+            gap: 0 50px;
+            &>li a{
+                color: $text-color-white;
+            }
+        }
+    }
+    &__contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 40px;
+        &>a{
+            color: $text-color-white;
+            font-family: "Museo Cyrl 700";
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 700;
+        }
+        &>button{
+            width: 202px;
+            height: 52px;
+            border-radius: 30px;
+            background: #047E65;
+            border: 0;
+            color: $text-color-white;
+            cursor: pointer;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            &:hover{
+                background-color: #045948;
+                transition: .3s;
+            }
+            &:active{
+                transform: translate(2px, 2px);
+            }
+        }
+    }
+}
+
+@media(max-width: 1300px){
+    .header{
+        &__menu{
+            &>ul{
+                gap: 0 20px;
+            }
+        }
+        &__contact{
+            gap: 0 20px;
+        }
+    }
+}
+
+@media(max-width: 1200px){
+    .header{
+        &__menu{
+            display: none;
+        }
+        &__contact{
+            display: none;
+        }
+    }
+}

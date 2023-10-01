@@ -1,0 +1,159 @@
+.choice{
+    padding-top: 130px;
+    color: #2d2d2d;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    &__top-title{
+        font-family: "Museo Cyrl 700";
+        font-size: 34px;
+        font-weight: 600;
+    }
+
+    &__choice-item{
+        display: none;
+    }
+
+    &__top-buttons{
+        display: flex;
+        gap: 0 30px;
+        &>label{
+            width: 238px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0 20px;
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+        &>label:nth-of-type(1){
+            border-radius: 35px;
+            background: linear-gradient(90deg, #71C1C6 0%, #7ED6DB 100%);
+        }
+        &>label:nth-of-type(2){
+            border-radius: 35px;
+            background: linear-gradient(90deg, #EC839C 0%, #EFA5B7 100%);
+        }
+    }
+
+    &__choice-item.show {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 60px;
+    }
+
+    &__top-buttons-input{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        width: 50px;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        outline: none;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+    }
+
+    &__top-buttons .blue{
+        background-color: #4AABB0;
+    }
+    &__top-buttons .pinck{
+        background-color: #D86C85;
+    }
+
+    &__top-buttons-input:checked::before{
+        width: 28px;
+        height: 28px;
+        display:flex;
+        content: '';
+        font-weight:bold;
+        position: absolute;
+        align-items:center;
+        justify-content:center;
+        background: url('../img/icon/input-check.svg') center/cover no-repeat;
+    }
+}
+
+
+@media(max-width: 1570px){
+    .choice{
+        &__top{
+            justify-content: center;
+            gap: 0 50px;
+        }
+        &__choice-item.show {
+            justify-content: center;
+            gap: 30px;
+        }
+    }
+}
+
+@media(max-width: 1440px){
+    .choice{
+        &__top{
+            justify-content: center;
+            gap: 0 50px;
+            margin-bottom: 50px;
+        }
+        &__top-title{
+            text-align: center;
+        }
+        &__choice-item.show {
+            grid-template-columns: repeat(2, auto, auto);
+            gap: 30px;
+        }
+    }
+}
+
+
+@media(max-width: 1160px){
+    .choice{
+        &__top{
+            flex-wrap: wrap;
+        }
+        &__top-title{
+            margin-bottom: 30px;
+        }
+        &__choice-item.show {
+            gap: 30px;
+        }
+    }
+}
+
+@media(max-width: 520px){
+    .choice{
+        &__top-buttons{
+            flex-direction: column;
+            &>label{
+                width: 200px;
+                height: 50px;
+                font-size: 18px;
+                color: #FFFFFF;
+            }
+            &>label:nth-of-type(1){
+                margin-bottom: 15px;
+            }
+        }
+        &__top-buttons-input{
+            width: 35px;
+            height: 35px;
+        }
+    }
+}

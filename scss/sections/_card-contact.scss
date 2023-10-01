@@ -1,0 +1,148 @@
+.card-contact{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        top: 0;
+        padding: 0 10px;
+        margin: 0 auto;
+        filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.05));
+        
+    }
+    &__contact{
+        background-color: $color-white;
+        max-width: 550px;
+        height: 600px;
+        min-height: 577px;
+        border-radius: 30px;
+        padding: 70px 100px;
+        position: absolute;
+        top: 50px;
+        filter: drop-shadow(0px 0px  40px rgba(0, 0, 0, 0.2));
+        &>button{
+            padding: 19px 30px;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            font-weight: 700;
+            color: $color-green;
+            border-radius: 30px;
+            border: 1px solid $color-green;
+            background-color: transparent;
+            cursor: pointer;
+            &:hover{
+                color: $text-color-white;
+                background-color: $color-green;
+                transition: .3s;
+            }
+            &:active{
+                transform: translate(2px, 2px);
+            }
+        }
+    }
+    &__contact-title{
+        font-family: "Museo Cyrl 700";
+        font-size: 34px;
+        font-weight: 700;
+        color: #EC839C;
+        margin-bottom: 41px;
+    }
+    &__contact-in{
+        color: $color-black;
+        display: flex;
+        flex-direction: column;
+        gap: 33px 0;
+        margin-bottom: 43px;
+        
+        & h5{
+            font-family: "Museo Cyrl 700";
+            font-size: 23px;
+            font-weight: 700px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: $color-black;
+        }
+        
+    }
+    &__contact-in-address{
+        &>h5{
+            &::before{
+                content: '';
+                background-image: url('../img/icon/address-icon.svg');
+                background-position: center;
+                background-size: cover;
+                width: 19px;
+                height: 25px;
+            }
+        }
+        &>p{
+            color: $color-black;
+            padding-left: 30px;
+        }
+    }
+
+    &__contact-in-telephon{
+        &>h5{
+            &::before{
+                content: '';
+                background-image: url('../img/icon/phone2-icon.svg');
+                background-position: center;
+                background-size: cover;
+                width: 21px;
+                height: 24px;
+            }
+        }
+        &>p{
+            color: $color-black;
+            padding-left: 35px;
+        }
+    }
+
+    &__contact-in-mail{
+        &>h5{
+            &::before{
+                content: '';
+                background-image: url('../img/icon/mail-icon.svg');
+                background-position: center;
+                background-size: cover;
+                width: 21px;
+                height: 17px;
+            }
+        }
+        &>p{
+            color: $color-black;
+            padding-left: 35px;
+        }
+    }
+
+    &__contact-social{
+        margin-bottom: 38px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        &>a img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    iframe{
+        width: 100%;
+        height: 700px;
+    }
+
+}
+
+@media(max-width: 768px){
+    .card-contact{
+        iframe{
+            height: 400px;
+            // display: none;
+        }
+        &__contact{
+            position: static;
+            margin: 0 auto;
+            padding: 50px;
+            margin-bottom: 20px;
+        }
+    }
+}

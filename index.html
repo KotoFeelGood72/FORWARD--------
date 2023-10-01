@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://db.onlinewebfonts.com/c/5d23cb75253ca214c8715a65ab8286bd?family=Museo+Cyrl+700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Forward</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__inner">
+                <img src="./img/icon/logo.svg" alt="logo">
+                <nav class="header__menu">
+                    <ul>
+                        <li><a href="#premium">Линейка Premium</a></li>
+                        <li><a href="#standart">Линейка Стандарт</a></li>
+                        <li><a href="#wholesale">Заказать оптом</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contact">
+                    <a href="tel:88005502880">8 (800) 550-2-880</a>
+                    <button class="button js-order">Заказать звонок</button>
+                </div>
+
+                <!-- Скрытое мею сайта -->
+
+                <div class="menu-hidden">
+                    <button class="menu-hidden__menu-btn-open" onclick="openNav()">☰</button>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <span  class="sidenav__closebtn" onclick="closeNav()">×</span>
+                    <ul>
+                        <li><a href="#">Линейка Premium</a></li>
+                        <li><a href="#">Линейка Стандарт</a></li>
+                        <li><a href="#">Заказать оптом</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="sidenav__contact">
+                        <a href="tel:88005502880">8 (800) 550-2-880</a>
+                        <button class="button js-order">Заказать звонок</button>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="top">
+                <div class="container top__inner">
+                        <div class="top__content">
+                            <h1 class="top__title">
+                                Сбалансированная формула сухих кормов для собак и кошек
+                            </h1>
+                            <p>Рацион вашего питомца который не пропадет с полок магазинов</p>
+                            <div class="top__box">
+                                <div class="top__box-in">
+                                    <img src="./img/icon/top-box-icon1.svg" alt="">
+                                    <p>С гордостью произведено в России</p>
+                                </div>
+                                <div class="top__box-in">
+                                    <img src="./img/icon/top-box-icon2.svg" alt="">
+                                    <p>Без курицы</p>
+                                </div>
+                                <div class="top__box-in">
+                                    <img src="./img/icon/top-box-icon3.svg" alt="">
+                                    <p>Натуральный состав</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./img/top-dog-banner.png" alt="">
+                        <img src="./img/top-cat-banner.png" alt="">
+                </div>
+            </section>
+
+            <section id="premium" class="premium mobile-hide">
+                <div class="container premium__inner">
+                    <div class="premium__content">
+                        <img src="./img/icon/logo-2.svg" alt="">
+                        <h2 class="premium__content-title">Premium</h2>
+                        <p>
+                            В основе линейки мясо и жир индейки
+                            Усвояемость белка более 80%
+                        </p>
+
+                        <ul class="premium__content-list">
+                            <li>Индейка</li>
+                            <li>Свекольная пульпа</li>
+                            <li>Льняное семя</li>
+                            <li>Экстракт цикория</li>
+                            <li>Пивные дрожжи</li>
+                            <li>Масло лососевых рыб</li>
+                            <li>
+                                Витамины
+                                <span>А, D3, E, железо, йод, медь, марганец, цинк, селен</span>
+                            </li>
+                            <li>Хондроитин для защиты суставов для собак</li>
+                            <li>Таурин для кошек</li>
+                            <li>Рис, кукуруза, пшеница</li>
+                        </ul>
+
+                        <div class="premium__content-in">
+                            <ul>
+                                <li>
+                                    <img src="./img/icon/fats-icon.svg" alt="">
+                                    <p>Не содержит мяса и жира курицы</p>
+                                </li>
+                                <li>
+                                    <img src="./img/icon/no-gmo-icon.svg" alt="">
+                                    <p>Не содержит ГМО, искусственные красители и ароматизаторы</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img src="./img/premium-block-img.png" alt="">
+                </div>
+            </section>
+            <section class="premium-mobile">
+                <div class="container">
+                    <div class="premium_mobileMain">
+                        <div class="prem-logo">
+                            <img src="./img/prem/logo.png" alt="">
+                        </div>
+                        <div class="prem-title">
+                            <h3>СТАНДАРТ</h3>
+                            <p>высокий процент мясных ингредиентов безглютеновый источник углеводов</p>
+                        </div>
+                        <div class="prem-list">
+                            <ul class="prem_default--list">
+                                <li>Говядина</li>
+                                <li>Экстракт Юкки Шидигера <span>Снижает запах экскрементов, препятствует образованию гнилостных процессов в толстом кишечнике</span></li>
+                                <li>Экстракт Ромашки <span>Обладает противовоспалительным и антибактериальным эффектом</span></li>
+                                <li>Спирулина <span>Защищает внутренние органы животных, стимулирует иммунитет</span></li>
+                                <li>Льняное семя <span>Источник полиненасыщенных жирных кислот для здоровья кожи и шерсти</span></li>
+                                <li>Горох <span>Безглютеновый ингредиент с высокой степенью усвояемости белка и крахмала</span> </li>
+                                <li>Автозилат пивных дрожжей <span>Натуральный пребиотик, источник аминокислот, минералов, витаминов группы В</span></li>
+                                <li>Пектины</li>
+                            </ul>
+                            <ul class="prem_img--list">
+                                <li>
+                                    <div class="prem_itemImg">
+                                        <img src="./img/prem/prem-0.png" alt="">
+                                    </div>
+                                    <p>Не содержит мяса и жира курицы</p>
+                                </li>
+                                <li>
+                                    <div class="prem_itemImg">
+                                        <img src="./img/prem/prem-1.png" alt="">
+                                    </div>
+                                    <p>Не содержит ГМО, искусственные красители и ароматизаторы</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prev-custom">
+                            <ul class="content-prev">
+                                <li>
+                                    <h4>Говядина</h4>
+                                    <p>Более 30% мясных ингредиентов в составе</p>
+                                </li>
+                                <li>
+                                    <h4>Говядина</h4>
+                                    <p>Более 30% мясных ингредиентов в составе</p>
+                                </li>
+                                <li>
+                                    <h4>Говядина</h4>
+                                    <p>Более 30% мясных ингредиентов в составе</p>
+                                </li>
+                                <li>
+                                    <h4>Говядина</h4>
+                                    <p>Более 30% мясных ингредиентов в составе</p>
+                                </li>
+                                <li>
+                                    <h4>Говядина</h4>
+                                    <p>Более 30% мясных ингредиентов в составе</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <img src="./img/prem/custom-1.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./img/prem/custom-2.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./img/prem/custom-3.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./img/prem/custom-4.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./img/prem/custom-5.png" alt="">
+                                </li>
+                            </ul>
+                            <div class="prem-img">
+                                <img src="./img/prem/prem-big.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="choice">
+                <div class="container choice__inner">
+                    <div class="choice__top">
+                        <h2 class="choice__top-title">Купить корм FORWARD PREMIUM</h2>
+                        <form class="choice__top-buttons">
+                                <label class="choice__top-buttons-label">
+                                    <input class="choice__top-buttons-input blue" type="radio" name="tab_input"  checked>
+                                    Для собак
+                                </label>
+    
+                                <label class="choice__top-buttons-label">
+                                    <input class="choice__top-buttons-input pinck" type="radio" name="tab_input" >
+                                    Для кошек
+                                </label>
+                        </form>
+                    </div>
+                    <div class="choice__choice">
+                        <div class="choice__choice-item">
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choice__choice-item">
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="wb-card">
+                <div class="container wb-card__inner">
+                    <div class="wb-card__content">
+                        <h2 class="wb-card__content-title">Всю нашу продукцию можно купить на Wildberries</h2>
+                        <a href="#">Перейти в магазин</a>
+                    </div>
+                    <img src="./img/wb-card-img.png" alt="">
+                    <img src="./img/icon/wb-logo-card.svg" alt="">
+                </div>
+            </section>
+
+            <section id="standart" class="standart">
+                <div class="container standart__inner">
+                    <div class="standart__content">
+                        <img src="./img/icon/logo-2.svg" alt="">
+                        <h2 class="standart__content-title">СТАНДАРТ</h2>
+                        <p>
+                            высокий процент мясных ингредиентов
+                            безглютеновый источник углеводов
+                        </p>
+
+                        <div class="standart__content-list">
+                            <p>Говядина</p>
+                            <p>
+                                Экстракт Юкки Шидигера
+                                <span>Снижает запах экскрементов, препятствует образованию гнилостных процессов в толстом кишечнике</span>
+                            </p>
+                            <p>
+                                Экстракт Ромашки
+                                <span>Обладает противовоспалительным и антибактериальным эффектом</span>
+                            </p>
+                            <p>
+                                Спирулина
+                                <span>Защищает внутренние органы животных, стимулирует иммунитет</span>
+                            </p>
+                            <p>
+                                Льняное семя
+                                <span>Источник полиненасыщенных жирных кислот для здоровья кожи и шерсти</span>
+                            </p>
+                            <p>
+                                Горох 
+                                <span>Безглютеновый ингредиент с высокой степенью усвояемости белка и крахмала</span>
+                            </p>
+                            <p>
+                                Автозилат пивных дрожжей 
+                                <span>Натуральный пребиотик, источник аминокислот, минералов, витаминов группы В</span>
+                            </p>
+                            <p>Пектины</p>
+                        </div>
+
+                        <div class="standart__content-in">
+                            <ul>
+                                <li>
+                                    <img src="./img/icon/fats-icon.svg" alt="">
+                                    <p>Не содержит мяса и жира курицы</p>
+                                </li>
+                                <li>
+                                    <img src="./img/icon/no-gmo-icon.svg" alt="">
+                                    <p>Не содержит ГМО, искусственные красители и ароматизаторы</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img src="./img/standart-block-img.png" alt="">
+                </div>
+            </section>
+
+            <section class="choice">
+                <div class="container choice__inner">
+                    <div class="choice__top">
+                        <h2 class="choice__top-title">Купить корм FORWARD СТАНДАРТ</h2>
+                        <form class="choice__top-buttons">
+                                <label class="choice__top-buttons-label">
+                                    <input class="choice__top-buttons-input blue" type="radio" name="tab_input"  checked>
+                                    Для собак
+                                </label>
+    
+                                <label class="choice__top-buttons-label">
+                                    <input class="choice__top-buttons-input pinck" type="radio" name="tab_input" >
+                                    Для кошек
+                                </label>
+                        </form>
+                    </div>
+                    <div class="choice__choice">
+                        <div class="choice__choice-item">
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choice__choice-item">
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.jpg" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-card-product">
+                                <img src="./img/card-min-img.png" alt="картинка товара">
+                                <div class="mini-card-product__content">
+                                    <h4 class="mini-card-product__content-title">FORWARD premium ЯГНЁНОК И ИНДЕЙКА, 2 кг</h4>
+                                    <span class="mini-card-product__content-price">1 069 руб.</span>
+                                    <div class="mini-card-product__content-btns">
+                                        <a href="./card-product.html">Подробнее</a>
+                                        <a href="#">Wildberries</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="wholesale" class="opt-card">
+                <div class="container opt-card__inner">
+                    <div class="opt-card__content">
+                        <h2 class="opt-card__content-title">Можно заказать оптом!</h2>
+                        <p>Условия для заказа оптом. Urna velit aenean est odio tempus sed lobortis ut. 
+                            Magna ullamcorper ultrices viverra pharetra sed eget non nunc nec.</p>
+                    </div>
+                    <img src="./img/opt-card-img.png" alt="">
+                    <button class="button js-order">Оставить заявку</button>
+                </div>
+            </section>
+            
+
+            <section id="contact" class="card-contact">
+                <div class="container card-contact__inner">
+                    <div class="card-contact__contact">
+                        <h3 class="card-contact__contact-title">Контакты</h3>
+                        <div class="card-contact__contact-in">
+                            <div class="card-contact__contact-in-address">
+                                <h5>Адрес</h5>
+                                <p>Краснодар, ул. Новороссийская, 172/2</p>
+                            </div>
+                            <a href="tel:88005502880" class="card-contact__contact-in-telephon">
+                                <h5>Телефон</h5>
+                                <p>8 (800) 550-2-880</p>
+                            </a>
+                            <a href="mailto:info@forward.pet"  class="card-contact__contact-in-mail">
+                                <h5>Почта</h5>
+                                <p>info@forward.pet</p>
+                            </a>
+                        </div>
+                        <div class="card-contact__contact-social">
+                            <a href="#">
+                                <img src="./img/icon/telegram-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/icon/odnoklassniki-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/icon/mail-icon.svg" alt="">
+                            </a>
+                        </div>
+                        <button class="js-order">Отправить заявку</button>
+                    </div>
+                </div>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9ea4665a6168f4b77696c5c721bd3f6b6afe68538b208263128e2b10cecd21ee&amp;source=constructor" frameborder="0"></iframe>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <img src="./img/icon/logo-2.svg" alt="forward logo">
+                    <div class="footer__top-contact">
+                        <a href="mailto:info@forward.pet">info@forward.pet</a>
+                        <a href="tel:88005502880">8 (800) 550-2-880</a>
+                        <button class="js-order">Обратный звонок</button>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>© Все права защищены, 2023</p>
+                    <div class="footer__bottom-linck">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="https://arkada-web.ru/">
+                            <img src="./img/icon/arkada-logo.svg" alt="arkada logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal">
+        <div class="modal__main">
+            <div class="modal__wrapper">
+                <div class="modal__content">
+                    <h2 class="modal__title">
+                        Оставьте заявку
+                    </h2>
+                    <form class="modal__form">
+                        <input type="text" class="modal__input" name="name" id="name" placeholder="Ваше имя">
+                        <input type="tel" class="modal__input" name="phone" id="phone" placeholder="Ваш телефон">
+                        <input type="submit" class="modal__submit">
+                        <span class="modal__form-text">
+                            Отправляя заявку вы соглашаетесь на обработку своих персональных данных и принимаете.<br>
+                            <a href="#">Политику конфиденциальности</a>
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <button class="modal__close" style="background-image: url('./img/icon/modal-close.svg');">
+            </button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
