@@ -116,5 +116,35 @@ const $tabItem = $tab.find('.choice__choice-item');
 
 /*****************************************************/
 
+document.addEventListener("DOMContentLoaded", function () {
+    const imageList = document.querySelectorAll(".img-prem-list li");
+    const contentList = document.querySelectorAll(".content-prev li");
+
+    imageList.forEach((img, index) => {
+        img.addEventListener("click", function () {
+            const dataIndex = this.getAttribute("data-index");
+
+            // Убрать активный класс у всех элементов списка img-prem-list
+            imageList.forEach((img) => {
+                img.classList.remove("active");
+            });
+
+            // Добавить активный класс к текущему элементу из списка img-prem-list
+            this.classList.add("active");
+
+            // Убрать активный класс у всех элементов списка content-prev
+            contentList.forEach((content) => {
+                content.style.display = "none";
+            });
+
+            // Отобразить соответствующий элемент из списка content-prev
+            contentList[dataIndex].style.display = "block";
+        });
+    });
+});
+
+
+
+
 
 
